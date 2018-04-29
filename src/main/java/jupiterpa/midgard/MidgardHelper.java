@@ -8,6 +8,6 @@ public class MidgardHelper {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MidgardHelper.class, args);
-		System.out.println("Test");
+		System.out.println("MidgardHelper");
 	} 
 }
