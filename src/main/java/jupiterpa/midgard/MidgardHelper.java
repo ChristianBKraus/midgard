@@ -8,7 +8,7 @@ public class MidgardHelper {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MidgardHelper.class, args);
-		System.out.println("MidgardHelper");
+		System.out.println("Midgard Helper");
 		Wuerfel wuerfeln = new Wuerfel();
 		
 		System.out.println ("Würfel: W2 (Münze)");
