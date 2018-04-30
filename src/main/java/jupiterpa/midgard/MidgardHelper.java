@@ -9,5 +9,48 @@ public class MidgardHelper {
 	public static void main(String[] args) {
 		SpringApplication.run(MidgardHelper.class, args);
 		System.out.println("MidgardHelper");
+		Wuerfel wuerfeln = new Wuerfel();
+		
+		System.out.println ("Würfel: W2 (Münze)");
+		for (int i = 0; i < 10; i++)
+		{
+			System.out.println (wuerfeln.wuerfel(2));
+		}
+		
+		System.out.println ("");
+
+		System.out.println ("Würfel: W3 (abwandlung W6)");
+		for (int i = 0; i < 10; i++)
+		{
+			System.out.println (wuerfeln.wuerfel(3));
+		}
+		
+		System.out.println ("");
+		
+		System.out.println ("Würfel: W6");
+		for (int i = 0; i < 10; i++)
+		{
+			System.out.println (wuerfeln.wuerfel(6));
+		}
+		
+		System.out.println ("");
+		
+		System.out.println ("Würfel: W20");
+		for (int i = 0; i < 10; i++)
+		{
+			System.out.println (wuerfeln.wuerfel(20));
+		}
+		
+		System.out.println ("");
+		
+		System.out.println ("Würfel: W% (auch W100)");
+		for (int i = 0; i < 10; i++)
+		{
+			System.out.println (wuerfeln.wuerfel(100));
+		}
+		
+		System.out.println ("");
+		
+		System.out.println ("Fertig!");
 	} 
 }
