@@ -4,8 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MidgardHelper {
-
+public class MidgardHelper
+{
 	public static void main(String[] args) {
 		SpringApplication.run(MidgardHelper.class, args);
 		System.out.println("Midgard Helper");
@@ -50,6 +50,12 @@ public class MidgardHelper {
 		}
 		
 		System.out.println ("");
+
+		System.out.println ("4W3+4: " + wuerfeln.extended (4, 3, +4));
+
+		System.out.println ("");
+
+		System.out.println ("3W2-5: " + wuerfeln.extended (3, 2, -5));
 		
 		System.out.println ("Fertig!");
 	} 

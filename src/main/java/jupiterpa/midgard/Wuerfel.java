@@ -16,4 +16,17 @@ public class Wuerfel
             default: return 0;
         }
     }
+
+    public int extended (int anzahl, int wuerfel, int bonus)
+    {
+        int rueckgabe = 0;
+        for (int i = 0; i < anzahl; i++)
+        {
+           rueckgabe += this.wuerfel (wuerfel);
+        }
+        rueckgabe += bonus;
+        if (rueckgabe < 0)
+            rueckgabe = 0;
+        return rueckgabe;
+    }
 }
