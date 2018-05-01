@@ -29,4 +29,9 @@ public class Wuerfel
             rueckgabe = 0;
         return rueckgabe;
     }
+
+    public int damage (String damageCode)
+    {
+        return 0;
+    }
 }
